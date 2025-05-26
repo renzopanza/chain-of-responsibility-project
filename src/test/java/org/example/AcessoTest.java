@@ -13,9 +13,9 @@ class AcessoTest {
 
     @BeforeEach
     void setUp() {
-        estagiario = new Estagiario(supervisor);
-        supervisor = new Supervisor(diretor);
         diretor = new Diretor(null);
+        supervisor = new Supervisor(diretor);
+        estagiario = new Estagiario(supervisor);
     }
 
     @Test
